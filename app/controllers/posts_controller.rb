@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
   def index
+    
   end
 
   def show
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -14,14 +16,14 @@ class PostsController < ApplicationController
     redirect_to post
   end
 
-  def edit
-  end
+  # def edit
+  # end
 
-  def update
-  end
+  # def update
+  # end
 
-  def destroy
-  end
+  # def destroy
+  # end
   
   private
   def post_params
